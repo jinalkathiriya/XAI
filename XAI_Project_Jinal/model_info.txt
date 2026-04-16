@@ -1,0 +1,29 @@
+
+
+MODEL INFORMATION
+
+Algorithm: Random Forest
+
+Accuracy: 0.7396
+Precision: 0.6301
+Recall: 0.6667
+F1-Score: 0.6479
+
+Total Data: 768
+
+Training Data: 576
+
+Test Data: 192
+
+Number of Features: 8
+
+Output Classes:
+0 = No Diabetes
+1 = Diabetes
+
+Confusion Matrix saved as image.
+
+Graphs saved:
+accuracy_curve.png
+loss_curve.png
+
