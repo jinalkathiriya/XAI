@@ -29,14 +29,14 @@ model = joblib.load(os.path.join(BASE_DIR,"model.pkl"))
 # input box
 st.write("Enter patient details:")
 
-preg = st.number_input("Pregnancies", 0, 20)
-glu = st.number_input("Glucose", 0, 200)
-bp = st.number_input("Blood Pressure", 0, 150)
-skin = st.number_input("Skin Thickness", 0, 100)
-ins = st.number_input("Insulin", 0, 900)
-bmi = st.number_input("BMI", 0.0, 70.0)
-dpf = st.number_input("Diabetes Pedigree Function", 0.0, 3.0)
-age = st.number_input("Age", 1, 120)
+preg = st.number_input("Pregnancies (0 – 17 (count))", 0, 20)
+glu = st.number_input("Glucose (0 – 199 mg/dL)", 0, 200)
+bp = st.number_input("Blood Pressure (0 – 122 mm Hg)", 0, 150)
+skin = st.number_input("Skin Thickness (0 – 99 mm)", 0, 100)
+ins = st.number_input("Insulin (0 – 846 µU/mL)", 0, 900)
+bmi = st.number_input("BMI (0.0 – 67.1 kg/m²)", 0.0, 70.0)
+dpf = st.number_input("Diabetes Pedigree Function (0.078 – 2.42 (score))", 0.0, 3.0)
+age = st.number_input("Age (21 – 81 years)", 1, 120)
 
 # prediction button
 if st.button("Predict"):
