@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+scikit-learn
+shap
+lime
+matplotlib
+tensorflow
+joblib
+
+XAI-Diabetes-Prediction
+app.py
+model.pkl
+dataset.csv
+requirements.txt
