@@ -4,3 +4,5 @@ numpy
 scikit-learn
 lime
 matplotlib
+seaborn
+shap
