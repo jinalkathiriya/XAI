@@ -5,14 +5,16 @@ import joblib
 import numpy as np
 from lime import lime_tabular
 from sklearn.preprocessing import StandardScaler
+import os
+
+BASE_DIR = os.path.dirname(__file__)
 
 # title
 st.title("Explainable AI System")
 st.subheader("Diabetes Prediction with Explanation")
 
 # load dataset
-df = pd.read_csv("dataset.csv")
-
+df = pd.read_csv(os.path.join(BASE_DIR,"dataset.csv"))
 # split data
 X = df.drop("Outcome", axis=1)
 y = df["Outcome"]
@@ -22,7 +24,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 # load model
-model = joblib.load("model.pkl")
+model = joblib.load(os.path.join(BASE_DIR,"model.pkl"))
 
 # input box
 st.write("Enter patient details:")
